@@ -14,7 +14,10 @@ const { OrdersModel } = require("./model/OrdersModel");
 const { UserModel } = require("./model/UserModel");
 // *****Middleware*******************************************************************
 const authRoute = require("./Routes/AuthRoute");
+const { Signup, Login } = require("../backend/Controllers/AuthController");
+const { createSecretToken } = require("../backend/util/SecretToken");
 const { verifyToken } = require("./Middlewares/AuthMiddleware"); 
+const app = express();
 app.use(cors({
   origin: [process.env.FrontEnd_URL, process.env.DahBoard_URL],
   methods: ["GET", "POST", "PUT", "DELETE"],
@@ -37,7 +40,7 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 
-const app = express();
+
 
 // app.use(cors());
 // app.use(bodyParser.json());

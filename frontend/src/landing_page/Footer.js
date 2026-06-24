@@ -15,15 +15,15 @@ function Footer() {
               &copy; 2010 - 2026, Zerodha Broking Ltd. All rights reserved.
             </p>
             <div className="col socialMedia d-flex justify-content-start gap-4 fs-5 text-muted">
-              <i class="fa-brands fa-x-twitter"></i>
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-x-twitter"></i>
+              <i className="fa-brands fa-square-facebook"></i>
+              <i className="fa-brands fa-square-instagram"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </div>
             <div className="col socialMedia mt-5 d-flex justify-content-start gap-4 fs-5 text-muted">
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-              <i class="fa-brands fa-telegram"></i>
+              <i className="fa-brands fa-youtube"></i>
+              <i className="fa-brands fa-whatsapp"></i>
+              <i className="fa-brands fa-telegram"></i>
             </div>
             <div className="col mt-5 d-flex gap-4">
               <img src="/media/images/googlePlayBadge.svg" style={{width:"40%"}} />
@@ -32,140 +32,140 @@ function Footer() {
           </div>
           <div className="col">
             <p className="fs-5 fw-semibold">Account</p>
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Open demat account
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Minor demat account
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               NRI demat account
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               HUF demat account
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Commodity
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Dematerialisation
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Fund transfer
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               MTF
             </a>
             <br />
           </div>
           <div className="col">
             <p className="fs-5 fw-semibold">Support</p>
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Contact us
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Support portal
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               How to file a complaint?
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Status of your complaints
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Bulletin
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Circular
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Z-Connect blog
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Downloads
             </a>
             <br />
           </div>
           <div className="col">
             <p className="fs-5 fw-semibold">Company</p>
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               About
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Philosophy
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Press & media
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Careers
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Zerodha Cares (CSR)
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Zerodha.tech
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Open source
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Referral program
             </a>
             <br />
           </div>
           <div className="col">
             <p className="fs-5 fw-semibold">Quicks Links</p>
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Upcoming IPOs
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Brokerage charges
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Market holidays
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Economic calendar
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Calculators
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Markets
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Sectors
             </a>
             <br />
-            <a class="footer-links" href="">
+            <a className="footer-links" href="">
               Gift Nifty
             </a>
             <br />

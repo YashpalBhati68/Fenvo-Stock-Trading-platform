@@ -14,7 +14,7 @@ import NotFound from "./landing_page/NotFound";
 // import Signin from "./landing_page/signup/Signin";
 import Login from './landing_page/auth/Login.js';
 import Signup from './landing_page/auth/SignUp.js';
-import Profile from './landing_page/profile/Profile.js';
+// import Profile from './landing_page/profile/Profile.js';
 import PrivateRoute from './landing_page/auth/PrivateRoute.js';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

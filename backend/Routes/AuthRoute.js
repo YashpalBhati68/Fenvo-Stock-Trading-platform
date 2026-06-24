@@ -1,5 +1,6 @@
 const { Signup, Login } = require("../Controllers/AuthController");
 const { userVerification } = require("../Middlewares/AuthMiddleware");
+const { createSecretToken } = require("../util/SecretToken");
 const router = require("express").Router();
 
 router.post("/signup", Signup);
