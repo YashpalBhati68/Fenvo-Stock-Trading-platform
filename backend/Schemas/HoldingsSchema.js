@@ -11,3 +11,17 @@ const HoldingsSchema = new Schema({
 });
 
 module.exports = { HoldingsSchema };
+
+// const { Schema } = require("mongoose");
+
+// const HoldingsSchema = new Schema({
+//   name: String,
+//   // symbol: String,
+//   qty: Number,
+//   avg: Number,
+//   price: Number,
+//   net: String,
+//   day: String,
+// });
+
+// module.exports = { HoldingsSchema };
