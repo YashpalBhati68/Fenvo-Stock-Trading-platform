@@ -13,13 +13,12 @@ const SellActionWindow = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
 
   const handleSellClick = async () => {
-    await axios.post("http://localhost:8080/newOrder", {
+    await axios.post("http://localhost:3002/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "SELL",
     });
-   
 
     generalContext.closeSellWindow();
   };
@@ -34,11 +33,20 @@ const SellActionWindow = ({ uid }) => {
         <div className="inputs">
           <fieldset>
             <legend>Qty.</legend>
-            <input type="number" value={stockQuantity} onChange={(e) => setStockQuantity(e.target.value)}/>
+            <input
+              type="number"
+              value={stockQuantity}
+              onChange={(e) => setStockQuantity(e.target.value)}
+            />
           </fieldset>
           <fieldset>
             <legend>Price</legend>
-            <input type="number" step="0.05" value={stockPrice} onChange={(e) => setStockPrice(e.target.value)}/>
+            <input
+              type="number"
+              step="0.05"
+              value={stockPrice}
+              onChange={(e) => setStockPrice(e.target.value)}
+            />
           </fieldset>
         </div>
       </div>
@@ -58,6 +66,3 @@ const SellActionWindow = ({ uid }) => {
 };
 
 export default SellActionWindow;
-
-
-
