@@ -10,12 +10,12 @@ const authRoute = require("./Routes/AuthRoute");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const uri = process.env.Mongo_URL;
+const uri = process.env.MONGO_URL;
 
 const app = express();
 app.use(
   cors({
-    origin: [process.env.FrontEnd_URL, process.env.DahBoard_URL],
+    origin: [process.env.FrontEnd_URL, process.env.DashBoard_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
@@ -86,7 +86,6 @@ app.get("/allOrders", async (req, res) => {
   res.json(allOrders);
 });
 
-
 app.post("/newOrder", async (req, res) => {
   let newOrder = new OrdersModel({
     name: req.body.name,
@@ -103,8 +102,8 @@ const connectDB = async () => {
     await mongoose.connect(uri);
     console.log("DB connected");
 
-    app.listen(process.env.PORT || 300, () => {
-      console.log(`Server running on port ${process.env.PORT || 3007}`);
+    app.listen(process.env.PORT || 3002, () => {
+      console.log(`Server running on port ${process.env.PORT || 3002}`);
     });
   } catch (err) {
     console.log("DB error:", err);
