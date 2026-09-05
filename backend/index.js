@@ -15,7 +15,7 @@ const uri = process.env.MONGO_URL;
 const app = express();
 app.use(
   cors({
-    origin: [process.env.FrontEnd_URL, process.env.DashBoard_URL],
+    origin: process.env.FrontEnd_URL,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),

@@ -38,7 +38,8 @@ const Login = () => {
         localStorage.setItem("username", user.username);
         localStorage.setItem("email", user.email);
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          // window.location.href = "http://localhost:3001";
+          navigate("/dashboard");
         }, 1000);
         // setTimeout(() => {
         //   navigate("/");

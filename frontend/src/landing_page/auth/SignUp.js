@@ -47,7 +47,8 @@ const Signup = () => {
         localStorage.setItem("email", user.email);
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          // window.location.href = "http://localhost:3001";
+          navigate("/dashboard");
         }, 1000);
         // setTimeout(() => {
         //   navigate("/");

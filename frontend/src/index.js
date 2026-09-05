@@ -12,10 +12,11 @@ import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import NotFound from "./landing_page/NotFound";
 // import Signin from "./landing_page/signup/Signin";
-import Login from './landing_page/auth/Login.js';
-import Signup from './landing_page/auth/SignUp.js';
+import Login from "./landing_page/auth/Login.js";
+import Signup from "./landing_page/auth/SignUp.js";
 // import Profile from './landing_page/profile/Profile.js';
-import PrivateRoute from './landing_page/auth/PrivateRoute.js';
+import PrivateRoute from "./landing_page/auth/PrivateRoute.js";
+import DashboardHome from "./dashboard/component/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,16 +24,24 @@ root.render(
     <Navbar />
     <Routes>
       {/* <Route path="/" element={<HomePage />}></Route> */}
-      <Route path='/' element={
-        <PrivateRoute>
-          <HomePage />
-        </PrivateRoute>
-      } />
-      {/* <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/signin" element={<Signin />} /> */}
+      <Route
+        path="/"
+        element={
+          <PrivateRoute>
+            <HomePage />
+          </PrivateRoute>
+        }
+      />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      {/* <Route path="/profile" element={<Profile />} /> */}
+      <Route
+        path="/dashboard/*"
+        element={
+          <PrivateRoute>
+            <DashboardHome />
+          </PrivateRoute>
+        }
+      />
       <Route path="/about" element={<AboutPage />}></Route>
       <Route path="/product" element={<ProductPage />}></Route>
       <Route path="/pricing" element={<PricingPage />}></Route>
@@ -42,24 +51,6 @@ root.render(
     <Footer />
   </BrowserRouter>,
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React from "react";
 // import ReactDOM from "react-dom/client";
@@ -105,4 +96,3 @@ root.render(
 //     <Footer />
 //   </BrowserRouter>,
 // );
-
