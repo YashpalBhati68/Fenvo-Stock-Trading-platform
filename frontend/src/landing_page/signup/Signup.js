@@ -43,8 +43,8 @@ const SignUp = () => {
   };
 
   return (
-    <div className="container text-center p-5">
-      <div className="row">
+    <div className="container text-center p-5" style="{margin:100px}">
+      <div className="row p-5">
         <h1
           className=" "
           style={{ fontSize: "3rem", opacity: "0.85", marginTop: "5rem" }}

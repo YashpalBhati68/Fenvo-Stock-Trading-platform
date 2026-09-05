@@ -57,7 +57,7 @@ const Login = () => {
   return (
     <div
       className="container d-flex justify-content-center align-items-center"
-      style={{ minHeight: "80vh" }}
+      style={{ minHeight: "80vh", marginTop:"50px"}}
     >
       <div className="card shadow p-4" style={{ width: "400px" }}>
         <h2 className="text-center mb-4">Login</h2>
