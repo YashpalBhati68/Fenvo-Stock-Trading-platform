@@ -50,7 +50,7 @@ const Signup = () => {
         handleSuccess(message);
         setTimeout(() => {
           // window.location.href = "http://localhost:3001";
-          navigate("/dashboard");
+          navigate("/dashboard/*");
         }, 1000);
       } else {
         handleError(message);
