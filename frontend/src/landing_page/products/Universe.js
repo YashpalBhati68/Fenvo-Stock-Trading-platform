@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 function Universe() {
+  const navigate = useNavigate();
   return (
     <div className="container" style={{ marginBottom: "10%" }}>
       <div className="row text-center mt-5 mb-5">
@@ -78,7 +79,8 @@ function Universe() {
           className="btn btn-primary text-center p-3"
           style={{ width: "15%", margin: "0 auto" }}
           onClick={() => {
-            window.location.href = "http://localhost:3000/signup";
+            // window.location.href = "http://localhost:3000/signup";
+             navigate("/signup")
           }}
         >
           Sign up for Free
