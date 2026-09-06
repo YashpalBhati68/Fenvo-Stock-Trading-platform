@@ -7,12 +7,12 @@ function Footer() {
         <div className="row mb-5 mt-5">
           <div className="col">
             <img
-              src="/media/images/logo.svg"
+              src="/media/images/BrandLogo2.png"
               style={{ width: "80%" }}
               className="mb-3"
             />
             <p className="text-muted" style={{ fontSize: "12px" }}>
-              &copy; 2010 - 2026, Zerodha Broking Ltd. All rights reserved.
+              &copy; 2025 - 2026, Fenvo Broking Ltd. All rights reserved.
             </p>
             <div className="col socialMedia d-flex justify-content-start gap-4 fs-5 text-muted">
               <i className="fa-brands fa-x-twitter"></i>
@@ -172,13 +172,13 @@ function Footer() {
           </div>
         </div>
         <p className="text-muted" style={{ fontSize: "12px" }}>
-          Zerodha Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
+          Fenvo Broking Ltd.: Member of NSE, BSE, MCX & MSEI – SEBI
           Registration no.: INZ000031633 CDSL/NSDL: Depository services through
-          Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
-          Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars
+          Fenvo Broking Ltd. – SEBI Registration no.: IN-DP-431-2019
+          Registered Address: Fenvo Broking Ltd., #153/154, 4th Cross, Dollars
           Colony, Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru -
           560078, Karnataka, India. For any complaints pertaining to securities
-          broking please write to complaints@zerodha.com, for DP related to
+          broking please write to complaints@fenvo.com, for DP related to
           dp@zerodha.com. Please ensure you carefully read the Risk Disclosure
           Document as prescribed by SEBI | ICF
         </p>

@@ -5,7 +5,7 @@ function Universe() {
   return (
     <div className="container" style={{ marginBottom: "10%" }}>
       <div className="row text-center mt-5 mb-5">
-        <h3>The Zerodha Universe</h3>
+        <h3>The Fenvo Universe</h3>
         <p>
           Extend your trading and investment experience even further with our
           partner platforms
@@ -18,7 +18,7 @@ function Universe() {
       >
         <div className="col-3">
           <img
-            src="\media\images\zerodhaFundhouse.png"
+            src="\media\images\FenvoFundHouse2.png"
             style={{ width: "50%" }}
           />
           <p className="p-3 text-muted">

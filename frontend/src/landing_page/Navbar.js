@@ -10,8 +10,8 @@ function Navbar() {
       <div className="container p-2">
         <Link className="navbar-brand" to="/">
           <img
-            src="/media/images/logo.svg"
-            style={{ width: "25%" }}
+            src="/media/images/BrandLogo2.png"
+            style={{ width: "15%", height:"20%" }}
             alt="logo"
           />
         </Link>
@@ -30,7 +30,11 @@ function Navbar() {
           <form className="d-flex" role="search">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/signup">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/signup"
+                >
                   Signup
                 </Link>
               </li>

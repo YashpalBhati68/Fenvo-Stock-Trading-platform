@@ -45,7 +45,7 @@ function CreateTicket() {
                 </div>
                 <div className="col-4 mt-5 mb-5">
                     <h4 className="">
-                        <i className="fa-solid fa-user" aria-hidden="true"></i> Your Zerodha Account
+                        <i className="fa-solid fa-user" aria-hidden="true"></i> Your Fenvo Account
                     </h4>
                     <span style={{color: "#387ed1",cursor: "pointer",textDecoration: "none",lineHeight: "2.5",}}>
                         Login Credentials

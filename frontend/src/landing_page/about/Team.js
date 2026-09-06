@@ -21,9 +21,9 @@ function Team() {
         </div>
         <div className="col-6  d-flex flex-column  d-flex flex-column justify-content-center">
           <p>
-            Yashpal bootstrapped and founded Zerodha in 2010 to overcome the
+            Yashpal bootstrapped and founded Fenvo in 2025 to overcome the
             hurdles he faced during his decade long stint as a trader. Today,
-            Zerodha has changed the landscape of the Indian broking industry.
+            Fenvo has changed the landscape of the Indian broking industry.
           </p>
           <p>
             He is a member of the SEBI Secondary Market Advisory Committee

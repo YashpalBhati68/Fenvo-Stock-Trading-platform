@@ -9,7 +9,7 @@ function Stats() {
           <div className="row pb-4">
             <h4>Customer-first always</h4>
             <p className="text-muted">
-              That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh
+              That's why 1.6+ crore customers trust Fenvo with ~ ₹6 lakh
               crores of equity investments, making us India’s largest broker;
               contributing to 15% of daily retail exchange volumes in India.
             </p>
