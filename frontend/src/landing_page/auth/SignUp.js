@@ -50,13 +50,16 @@ const Signup = () => {
         handleSuccess(message);
         setTimeout(() => {
           // window.location.href = "http://localhost:3001";
-          navigate("/dashboard/*");
+          navigate("/dashboard");
         }, 1000);
       } else {
         handleError(message);
       }
     } catch (error) {
-      console.log(error);
+      console.log("Signup error:", error);
+      handleError(
+        error.response?.data?.message || "Unable to signup. Please try again.",
+      );
     }
     setInputValue({
       ...inputValue,
@@ -116,11 +119,7 @@ const Signup = () => {
               />
             </div>
 
-            <button
-              type="submit"
-              className="btn btn-primary w-100"
-              onClick={handleSubmit}
-            >
+            <button type="submit" className="btn btn-primary w-100">
               Submit
             </button>
 
