@@ -35,7 +35,6 @@ const Login = () => {
 
       const { success, message, user } = data;
 
-
       if (success && user) {
         handleSuccess(message);
         localStorage.setItem("username", user.username);
@@ -92,7 +91,11 @@ const Login = () => {
                 required
               />
             </div>
-            <button type="submit" className="btn btn-primary w-100">
+            <button
+              type="submit"
+              className="btn btn-primary w-100"
+              onClick={handleSubmit}
+            >
               Login
             </button>
             <div className="text-center mt-3">
