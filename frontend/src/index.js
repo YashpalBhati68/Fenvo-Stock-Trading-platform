@@ -20,7 +20,6 @@ import DashboardHome from "./dashboard/component/Home";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-   
     <Routes>
       <Route
         path="/"
@@ -33,7 +32,7 @@ root.render(
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route
-        path="/dashboard/*"
+        path="/dashboard"
         element={
           <PrivateRoute>
             <DashboardHome />
@@ -46,7 +45,6 @@ root.render(
       <Route path="/support" element={<SupportPage />}></Route>
       <Route path="/*" element={<NotFound />}></Route>
     </Routes>
-    
   </BrowserRouter>,
 );
 
