@@ -5,14 +5,14 @@ import OpenAccount from "../OpenAccount";
 import Team from "./Team";
 import Footer from "../Footer";
 
-
-
-function AboutPage(){
-    return(
-        <>
-            <Hero/>
-            <Team/>
-        </>
-    );
+function AboutPage() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Team />
+      <Footer />
+    </>
+  );
 }
 export default AboutPage;

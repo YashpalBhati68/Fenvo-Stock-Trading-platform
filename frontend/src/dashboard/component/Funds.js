@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../dashboard.css";
 
 const Funds = () => {
   return (
     <>
       <div className="funds">
         <p>Instant, zero-cost fund transfers with UPI </p>
-        <Link className="btn btn-green">Add funds</Link>
-        <Link className="btn btn-blue">Withdraw</Link>
+        <Link className="dashboard-btn btn-green">Add funds</Link>
+        <Link className="dashboard-btn btn-blue">Withdraw</Link>
       </div>
 
-      <div className="row">
-        <div className="col">
+      <div className="dashboard-row">
+        <div className="dashboard-col">
           <span>
             <p>Equity</p>
           </span>
@@ -74,7 +75,7 @@ const Funds = () => {
           </div>
         </div>
 
-        <div className="col">
+        <div className="dashboard-col">
           <div className="commodity">
             <p>You don't have a commodity account</p>
             <Link className="btn btn-blue">Open Account</Link>

@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const Login = () => {
   const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -33,6 +35,7 @@ const Login = () => {
 
       const { success, message, user } = data;
 
+
       if (success && user) {
         handleSuccess(message);
         localStorage.setItem("username", user.username);
@@ -56,50 +59,54 @@ const Login = () => {
   };
 
   return (
-    <div
-      className="container d-flex justify-content-center align-items-center"
-      style={{ minHeight: "80vh", marginTop:"50px"}}
-    >
-      <div className="card shadow p-4" style={{ width: "400px" }}>
-        <h2 className="text-center mb-4">Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label className="form-label">Email</label>
-            <input
-              type="email"
-              className="form-control"
-              name="email"
-              value={email}
-              placeholder="Enter your email"
-              onChange={handleOnChange}
-              required
-            />
-          </div>
-          <div className="mb-3">
-            <label className="form-label">Password</label>
-            <input
-              type="password"
-              className="form-control"
-              name="password"
-              value={password}
-              placeholder="Enter your password"
-              onChange={handleOnChange}
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn-primary w-100">
-            Login
-          </button>
-          <div className="text-center mt-3">
-            Don't have an account?{" "}
-            <Link to="/signup" className="text-decoration-none">
-              Signup
-            </Link>
-          </div>
-        </form>
+    <>
+      <Navbar />
+      <div
+        className="container d-flex justify-content-center align-items-center"
+        style={{ minHeight: "80vh", marginTop: "50px" }}
+      >
+        <div className="card shadow p-4" style={{ width: "400px" }}>
+          <h2 className="text-center mb-4">Login</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <label className="form-label">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                value={email}
+                placeholder="Enter your email"
+                onChange={handleOnChange}
+                required
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Password</label>
+              <input
+                type="password"
+                className="form-control"
+                name="password"
+                value={password}
+                placeholder="Enter your password"
+                onChange={handleOnChange}
+                required
+              />
+            </div>
+            <button type="submit" className="btn btn-primary w-100">
+              Login
+            </button>
+            <div className="text-center mt-3">
+              Don't have an account?{" "}
+              <Link to="/signup" className="text-decoration-none">
+                Signup
+              </Link>
+            </div>
+          </form>
+        </div>
+        <ToastContainer />
       </div>
-      <ToastContainer />
-    </div>
+      <Footer />
+    </>
   );
 };
 

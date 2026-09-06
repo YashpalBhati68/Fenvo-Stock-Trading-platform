@@ -9,6 +9,7 @@ import Hero from "./Hero";
 function ProductsPage() {
   return (
     <>
+      <Navbar />
       <Hero />
       <LeftSection
         imageURL="/media/images/kite.png"
@@ -50,6 +51,7 @@ function ProductsPage() {
         appStore=""
       />
       <Universe />
+      <Footer />
     </>
   );
 }

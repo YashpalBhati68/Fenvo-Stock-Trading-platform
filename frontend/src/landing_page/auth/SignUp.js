@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const Signup = () => {
   const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -69,70 +71,74 @@ const Signup = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center min-vh-100">
-      <div className="card shadow p-4" style={{ width: "400px" }}>
-        <h2 className="text-center mb-4">Signup Account</h2>
+    <>
+      <Navbar />
+      <div className="container d-flex justify-content-center align-items-center min-vh-100">
+        <div className="card shadow p-4" style={{ width: "400px" }}>
+          <h2 className="text-center mb-4">Signup Account</h2>
 
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={email}
-              placeholder="Enter your email"
-              onChange={handleOnChange}
-              className="form-control"
-            />
-          </div>
+          <form onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={email}
+                placeholder="Enter your email"
+                onChange={handleOnChange}
+                className="form-control"
+              />
+            </div>
 
-          <div className="mb-3">
-            <label htmlFor="username" className="form-label">
-              Username
-            </label>
-            <input
-              type="text"
-              name="username"
-              value={username}
-              placeholder="Enter your username"
-              onChange={handleOnChange}
-              className="form-control"
-            />
-          </div>
+            <div className="mb-3">
+              <label htmlFor="username" className="form-label">
+                Username
+              </label>
+              <input
+                type="text"
+                name="username"
+                value={username}
+                placeholder="Enter your username"
+                onChange={handleOnChange}
+                className="form-control"
+              />
+            </div>
 
-          <div className="mb-3">
-            <label htmlFor="password" className="form-label">
-              Password
-            </label>
-            <input
-              type="password"
-              name="password"
-              value={password}
-              placeholder="Enter your password"
-              onChange={handleOnChange}
-              className="form-control"
-            />
-          </div>
+            <div className="mb-3">
+              <label htmlFor="password" className="form-label">
+                Password
+              </label>
+              <input
+                type="password"
+                name="password"
+                value={password}
+                placeholder="Enter your password"
+                onChange={handleOnChange}
+                className="form-control"
+              />
+            </div>
 
-          <button type="submit" className="btn btn-primary w-100">
-            Submit
-          </button>
+            <button type="submit" className="btn btn-primary w-100">
+              Submit
+            </button>
 
-          <div className="text-center mt-3">
-            <span>
-              Already have an account?{" "}
-              <Link to="/login" className="text-decoration-none">
-                Login
-              </Link>
-            </span>
-          </div>
-        </form>
+            <div className="text-center mt-3">
+              <span>
+                Already have an account?{" "}
+                <Link to="/login" className="text-decoration-none">
+                  Login
+                </Link>
+              </span>
+            </div>
+          </form>
 
-        <ToastContainer />
+          <ToastContainer />
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

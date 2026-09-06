@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../dashboard.css";
 import Menu from "./Menu";
 
 const TopBar = () => {

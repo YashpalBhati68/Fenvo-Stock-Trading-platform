@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
+import "../dashboard.css";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
@@ -14,7 +15,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="logo.png" style={{ width: "50px" }} alt="logo" />
+      <img src="../logo.png" style={{ width: "50px" }} alt="logo" />
       <div className="menus">
         <ul>
           <li>

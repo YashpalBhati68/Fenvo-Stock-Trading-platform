@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import "../dashboard.css";
 const Orders = () => {
   const [orders, setOrders] = useState([]);
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;

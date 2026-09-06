@@ -40,7 +40,7 @@ code {
   margin-right: 8px;
 }
 
-.btn {
+.dashboard-btn {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 2px;
@@ -57,7 +57,7 @@ code {
   background: #4184f3;
 }
 
-.row {
+.dashboard-row {
   width: 100%;
   display: flex;
   align-items: center;
@@ -65,12 +65,12 @@ code {
   margin-top: 5%;
 }
 
-.col {
+.dashboard-col {
   flex-basis: 48%;
   text-align: left;
 }
 
-.col span {
+.dashboard-col span {
   display: flex;
   align-items: center;
   margin-bottom: 2%;
@@ -84,7 +84,7 @@ code {
   margin-right: 10px;
 }
 
-.col span p {
+.dashboard-col span p {
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 300;
@@ -185,9 +185,7 @@ code {
   border-right: 1px solid #f1f1f1;
 }
 
-/* .order-table tr td:last-child {
-  font-size: 0.6rem;
-} */
+
 
 .order-table td {
   padding: 10px 10px;
@@ -209,36 +207,36 @@ code {
   color: rgb(250, 118, 78);
 }
 
-.row {
+.dashboard-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 5%;
 }
 
-.col {
+.dashboard-col {
   flex-basis: 33%;
 }
 
-.col h5 {
+.dashboard-col h5 {
   font-size: 1.8rem;
   color: rgb(71, 71, 71);
   font-weight: 300;
 }
 
-.col h5 span {
+.dashboard-col h5 span {
   font-weight: 300;
   font-size: 0.9rem;
 }
 
-.col p {
+.dashboard-col p {
   font-size: 0.8rem;
   color: rgb(153, 153, 153);
   font-weight: 300;
   margin-top: 2%;
 }
 
-.row .col:last-child h5 {
+.dashboard-row .col:last-child h5 {
   color: rgb(72, 194, 55);
 }
 
@@ -368,7 +366,7 @@ hr {
   font-weight: 300;
 }
 
-.btn {
+.dashboard-btn {
   text-decoration: none;
   background: rgb(77, 77, 248);
   padding: 10px 20px;
@@ -377,7 +375,7 @@ hr {
   margin-top: 2%;
 }
 
-.btn:hover {
+.dashboard-btn:hover {
   background: rgb(110, 110, 253);
 }
 
@@ -419,9 +417,7 @@ hr {
     border-radius: 2px;
 }
 
-/* .order-table tr td:last-child {
-  font-size: 0.6rem;
-} */
+
 
 .order-table td {
   padding: 10px 10px;
@@ -443,36 +439,36 @@ hr {
   color: rgb(250, 118, 78);
 }
 
-.row {
+.dashboard-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 5%;
 }
 
-.col {
+.dashboard-col {
   flex-basis: 33%;
 }
 
-.col h5 {
+.dashboard-col h5 {
   font-size: 1.8rem;
   color: rgb(71, 71, 71);
   font-weight: 300;
 }
 
-.col h5 span {
+.dashboard-col h5 span {
   font-weight: 300;
   font-size: 0.9rem;
 }
 
-.col p {
+.dashboard-col p {
   font-size: 0.8rem;
   color: rgb(153, 153, 153);
   font-weight: 300;
   margin-top: 2%;
 }
 
-.row .col:last-child h5 {
+.dashboard-row .dashboard-col:last-child h5 {
   color: rgb(72, 194, 55);
 }
 

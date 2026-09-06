@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import "../dashboard.css";
 const Positions = () => {
   const BACKEND_URL =
-    process.env.REACT_APP_BACKEND_URL || "http://localhost:3002";
+    process.env.REACT_APP_BACKEND_URL ;
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {

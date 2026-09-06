@@ -52,13 +52,13 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
           </fieldset>
         </div>
       </div>
-      <div className="buttons">
+      <div className="sell-buttons">
         <span>Place Sell Order</span>
         <div>
-          <Link className="btn btn-red" onClick={handleSellClick}>
+          <Link className="sell-btn btn-red" onClick={handleSellClick}>
             Sell
           </Link>
-          <Link className="btn btn-grey" onClick={handleCancelClick}>
+          <Link className="sell-btn btn-grey" onClick={handleCancelClick}>
             Cancel
           </Link>
         </div>

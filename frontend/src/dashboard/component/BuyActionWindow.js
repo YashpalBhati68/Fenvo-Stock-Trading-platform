@@ -34,7 +34,7 @@ const BuyActionWindow = ({ uid }) => {
   };
 
   return (
-    <div className="container" id="buy-window" draggable="true">
+    <div className="buy-container" id="buy-window" draggable="true">
       <div className="regular-order">
         <div className="inputs">
           <fieldset>
@@ -58,15 +58,15 @@ const BuyActionWindow = ({ uid }) => {
         </div>
       </div>
 
-      <div className="buttons">
+      <div className="buy-buttons">
         <span>Margin required ₹140.65</span>
 
         <div>
-          <Link className="btn btn-blue" onClick={handleBuyClick}>
+          <Link className="buy-btn btn-blue" onClick={handleBuyClick}>
             Buy
           </Link>
 
-          <Link to="" className="btn btn-grey" onClick={handleCancelClick}>
+          <Link to="" className="buy-btn btn-grey" onClick={handleCancelClick}>
             Cancel
           </Link>
         </div>

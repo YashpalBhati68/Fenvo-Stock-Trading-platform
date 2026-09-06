@@ -10,6 +10,7 @@ import Summary from "./Summary";
 import WatchList from "./WatchList";
 import NotFound from "./NotFound";
 import { GeneralContextProvider } from "./GeneralContext";
+import "../dashboard.css";
 
 const Dashboard = () => {
   return (
